@@ -2,7 +2,6 @@
 
 body {
   background-color: #ee3f54;
-
 }
 
 #social-container {
@@ -12,8 +11,31 @@ body {
 #logo-container .callout {
   background-color: #ee3f54;
   color: white;
+  margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6, button {
   font-family: 'Bree Serif', serif;
+}
+
+#menu-container {
+  background-color: #48a19d;
+}
+
+#menu-container li a {
+  color: white;
+  font-family: 'Bree Serif', serif;
+}
+
+#menu-container li a:hover {
+  color: #f6e15f;
+}
+
+#submenu-container {
+   border: 0;//eliminacion del borde
+}
+
+#submenu-container li a{
+  background-color: #48a19d;
+  color: white;
 }

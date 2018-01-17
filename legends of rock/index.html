@@ -44,11 +44,6 @@
           <!-- align-spaced permite el espacio anuestro menu -->
         <li>
           <a href="#">Tickets</a>
-          <ul class="menu">
-            <li><a href="#">Viernes</a></li>
-            <li><a href="#">Sabado</a></li>
-            <li><a href="#">Domingo</a></li>
-          </ul>
         </li>
           <li>
             <a href="#">Lineup</a>
@@ -60,26 +55,58 @@
           </li>
           <li>
             <a href="#">Info</a>
-              <ul class="menu">
-                <li><a href="#">viernes</a></li>
-
-              </ul>
             </li>
             <li>
               <a href="#">Suscríbete</a>
-                <ul class="menu">
-                  <li><a href="#">Item 1A</a></li>
-                  <!-- ... -->
-                </ul>
               </li>
-
         </ul>
     </section>
-    <!-- Menu -->
+    <!-- /Menu -->
 
-    <ul class="dropdown menu" data-dropdown-menu>
+    <!--  Tickets -->
+    <section id="Tickets-action">
+      <div class="callout large text-center"><!-- callout large Hace mas grande la tarjeta -->
+        <a href="#">
+          <button class=" large button hollow">Comprar Boletos</button>
+          <!-- large define el tamaño del boton con fondation  -->
+          <!-- hollow Permite darle tranparencia al botton-->
+        </a>
+      </div>
 
-</ul>
+    </section>
+    <!--  /Tickets -->
+
+    <!-- Lineup  -->
+    <section id="lineup-container">
+      <h3 class="text-center">Lineup</h3>
+      <ul class="tabs text-center" data-tabs id="lineup-taps">
+        <li class="tabs-title is-active">
+          <a href="#panelViernes">Viernes</a><!-- se utilisan los id de panel para hacer la navegacion -->
+        </li>
+        <li class="tabs-title">
+          <a href="#panelSabado">Sábado</a>
+        </li>
+        <li class="tabs-title ">
+          <a href="#panelDomingo">Domingo</a>
+        </li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="lineup-taps"> <!-- colocamos el id, para que fondation sepa cual es el menu de navegacion -->
+        <div class="tabs-panel is-active" id="panelViernes">
+          viernes
+        </div>
+        <div class="tabs-panel" id="panelSabado">
+          sabado
+        </div>
+        <div class="tabs-panel" id="panelDomingo">
+          Domingo
+        </div>
+
+
+
+      </div>
+    </section>
+    <!-- /Lineup  -->
+
 
 
 

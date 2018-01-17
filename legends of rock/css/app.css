@@ -86,3 +86,12 @@ font-family: 'Bree Serif', serif;
   display: inline-block;
   float: none;
 }
+
+#lineup-container .orbit {
+  margin:  1em;
+}
+
+#lineup-container .colum:nth-child(odd) figcaption {/* Alineacion de textos de imagenes*/
+/* .colum:nth-child(odd) permite detectar las imagenes impares para horientar el texto */
+  text-align: right;
+}

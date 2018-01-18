@@ -95,3 +95,14 @@ font-family: 'Bree Serif', serif;
 /* .colum:nth-child(odd) permite detectar las imagenes impares para horientar el texto */
   text-align: right;
 }
+
+#tickets-container {
+  padding: 1em 0;
+  background-color: #f6e15f;
+  color: #161742;
+}
+
+.pricing-table {
+  border: 1px solid #161742;
+  font-family: 'Ravi Prakash', cursive;
+}

@@ -7,8 +7,10 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/pricing-table.css">
     <link rel="stylesheet" href="icons/foundation-icons.css"><!-- Enlace a nuestross iconos -->
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Ravi+Prakash" rel="stylesheet">
   </head>
   <body>
     <!--  Social-->
@@ -275,6 +277,60 @@
   </section>
     <!-- /Lineup  -->
 
+    <!-- Comprar Boletos  -->
+    <section id="tickets-container">
+      <h3 class="text-center">Compra tus boletos</h3>
+      <div class="row" data-equalizer data-equalizer-on="small"><!-- data-equalizer permite igualar tamaño de los elementos, lo usamos en las tablas y despues definimos en que tamaño queremos aplicarlo-->
+        <!-- -offset- perite elegir apartir de cuantas columnas empezar   -->
+        <div class="colum small-10 small-offset-1 medium-6 medium-offset-3">
+          <div id="generic_price_table">
+            <section>
+              <ul class="pricing-table no-bullet text-center">
+                <li class="title">Platino</li>
+                <li class="price">$120</li>
+                <li class="description">Acceso Viernes, sábado y domingo</li>
+                <li>2 Bebidas por día</li>
+                <li>Estacionamiento Incluido</li>
+                <li>Participa en sorteos</li>
+                <li><a class="button" href="#">Comprar Platino</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Gold  -->
+          <div class="colum small-6 medium-4 medium-offset-2">
+            <div id="generic_price_table">
+              <section>
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Gold</li>
+                  <li class="price">$90</li>
+                  <li class="description">Acceso Viernes, sábado y domingo</li>
+                  <li data-equalizer-watch>2 Bebidas por día</li>
+                  <li><a class="button" href="#">Comprar Gold</a></li>
+                </ul>
+              </div>
+            </div>
+          <!-- Silver  -->
+          <div class="colum small-6 medium-4">
+            <div id="generic_price_table">
+              <section>
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Silver</li>
+                  <li class="price">$65</li>
+                  <li class="description">Acceso Viernes, sábado y domingo</li>
+                  <li data-equalizer-watch></li><!-- llama al data-equalizer del row arriba -->
+                  <li><a class="button" href="#">Comprar Silver</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+        </div>
+      </section>
+
+
+
+    <!-- /Comprar Boletos  -->
 
 
 

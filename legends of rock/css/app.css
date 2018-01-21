@@ -122,3 +122,12 @@ font-family: 'Bree Serif', serif;
 #suscribete-container h4 small {
   color: #ffcddc;
 }
+
+#suscribete-container .error-container {
+  font-family: 'Bree Serif', serif;
+}
+
+.is-invalid-input:not(:focus) {
+  background-color: rgb(255,228,288);
+  border-color: rgb(255,228,228);
+}

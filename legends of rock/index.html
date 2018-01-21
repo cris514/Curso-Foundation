@@ -332,11 +332,17 @@
     <section id="suscribete-container">
       <h3 class="text-center">Suscríbete</h3>
       <h4 class="text-center"><small> Y resibe las ultimas novedades</small></h4>
-      <form action="" method="post">
+      <!-- data-abide, para validar formularios con fondation(abide)  -->
+      <form action="" method="post" novalidate data-abide><!-- novalidate, permite que el navegador no arroje el mensaje de correo no valido -->
+          <div data-abide-error class="row columns samll-12 medium-6 text-center"  class="error-container" style="display: none;">
+            <p><i class="fi-alert"></i>Ingresó un correo electronico no válido</p>
+
+          </div>
         <div class="row columns samll-12 medium-6">
           <div class="input-group">
             <span class="input-group-label"><i class="fi-mail"></i></span>
-            <input type="email" name="email" class="input-group-field "placeholder="Tu@corre.com">
+            <input type="email" name="email" class="input-group-field "
+            placeholder="Tu@corre.com" required>
             <div class="input-group-button">
               <input type="submit" class="button" value="Suscribirse!!">
             </div>

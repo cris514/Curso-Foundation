@@ -131,3 +131,7 @@ font-family: 'Bree Serif', serif;
   background-color: rgb(255,228,288);
   border-color: rgb(255,228,228);
 }
+
+.data-sticky {
+  z-index: 100;
+}

@@ -41,14 +41,15 @@
 
     <!-- Menu -->
     <section id="menu-container">
-      <ul class="dropdown menu align-spaced" data-dropdown-menu >
+      <nav data-magellan><!-- Se utiliza para generar una navegacion fluida dentro de la paguina -->
+      <ul class="dropdown menu align-spaced" data-dropdown-menu>
         <!-- se le agregamos icon -top podemos poner los iconos arriba del texto -->
           <!-- align-spaced permite el espacio anuestro menu -->
         <li>
-          <a href="#">Tickets</a>
+          <a href="#tickets-container">Tickets</a>
         </li>
           <li>
-            <a href="#">Lineup</a>
+            <a href="#lineup-container">Lineup</a>
             <ul id="submenu-container" class="menu">
               <li><a href="#">Viernes</a></li>
               <li><a href="#">Sabado</a></li>
@@ -56,12 +57,13 @@
             </ul>
           </li>
           <li>
-            <a href="#">Info</a>
+            <a href="#info-container">Info</a>
             </li>
             <li>
-              <a href="#">Suscríbete</a>
+              <a href="#suscribete-container">Suscríbete</a>
               </li>
         </ul>
+      </nav>
     </section>
     <!-- /Menu -->
 
@@ -79,7 +81,7 @@
     <!--  /Tickets -->
 
     <!-- Lineup  -->
-    <section id="lineup-container">
+    <section id="lineup-container" data-magellan-target="lineup-container"><!--  data-magellan-target="lineup-container, se agrega para la navegacion fluida" -->
       <h3 class="text-center">Lineup</h3>
       <ul class="tabs text-center" data-tabs id="lineup-taps">
         <li class="tabs-title is-active">
@@ -278,7 +280,7 @@
     <!-- /Lineup  -->
 
     <!-- Comprar Boletos  -->
-    <section id="tickets-container">
+    <section id="tickets-container" data-magellan-target="tickets-container">
       <h3 class="text-center">Compra tus boletos</h3>
       <div class="row" data-equalizer data-equalizer-on="small"><!-- data-equalizer permite igualar tamaño de los elementos, lo usamos en las tablas y despues definimos en que tamaño queremos aplicarlo-->
         <!-- -offset- perite elegir apartir de cuantas columnas empezar   -->
@@ -329,7 +331,7 @@
     <!-- /Comprar Boletos  -->
 
     <!-- Suscribete  -->
-    <section id="suscribete-container">
+    <section id="suscribete-container" data-magellan-target="suscribete-container">
       <h3 class="text-center">Suscríbete</h3>
       <h4 class="text-center"><small> Y resibe las ultimas novedades</small></h4>
       <!-- data-abide, para validar formularios con fondation(abide)  -->
@@ -356,7 +358,7 @@
     <!-- Suscribete -->
 
     <!-- Info  -->
-      <section id="info-container">
+      <section id="info-container" data-magellan-target="info-container">
         <h3 class="text-center"> Información</h3>
 
           <!-- data-interchange, Permite mostrar una imagen dependiento del tamaño de pantalla en el que la visualisamos

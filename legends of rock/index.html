@@ -19,14 +19,14 @@
 
         <div id="offCanvas" class="off-canvas position-left" data-off-canvas><!-- Posicion del menu despegable-->
           <nav data-magellan>
-              <ul class="vertical menu">
+              <ul class="vertical menu" data-drilldown><!-- data-drilldown, animacion para el menu -->
                 <li><a href="#tickets-container">Tickets</a></li>
                 <li><a href="#lineup-container">Lineup</a>
-                    <!-- <ul id="submenu-container" class="menu">
+                    <ul class=" vertical menu">
                       <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
                       <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sabado</a></li>
                       <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
-                    </ul> -->
+                    </ul>
                   </li>
                 <li><a href="#info-container">Info</a></li>
                 <li><a href="#suscribete-container">Suscríbete</a></li>
@@ -360,7 +360,7 @@
                     <h3 class="text-center">Suscríbete</h3>
                     <h4 class="text-center"><small> Y resibe las ultimas novedades</small></h4>
                     <!-- data-abide, para validar formularios con fondation(abide)  -->
-                    <form action="" method="post" novalidate data-abide><!-- novalidate, permite que el navegador no arroje el mensaje de correo no valido -->
+                    <form action="https://formspree.io/micorreo@ejemplo.com" method="post" novalidate data-abide><!-- novalidate, permite que el navegador no arroje el mensaje de correo no valido -->
                         <div data-abide-error class="row columns samll-12 medium-6 text-center"  class="error-container" style="display: none;">
                           <p><i class="fi-alert"></i>Ingresó un correo electronico no válido</p>
 
